@@ -532,7 +532,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c99334a21d1a545afa4ff152699277db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
-  speed: 20
+  speed: 100
 --- !u!58 &88148547
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1945,11 +1945,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3678211002634953201, guid: 5efd9184039d9499394a52926a27ef46, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 18.75
+      value: 18.82
       objectReference: {fileID: 0}
     - target: {fileID: 3678211002634953201, guid: 5efd9184039d9499394a52926a27ef46, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -12.75
+      value: -14.74
       objectReference: {fileID: 0}
     - target: {fileID: 3678211002634953201, guid: 5efd9184039d9499394a52926a27ef46, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4881,11 +4881,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3678211002634953201, guid: 5efd9184039d9499394a52926a27ef46, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -26.15
+      value: -27.55
       objectReference: {fileID: 0}
     - target: {fileID: 3678211002634953201, guid: 5efd9184039d9499394a52926a27ef46, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.5500011
+      value: 2.42
       objectReference: {fileID: 0}
     - target: {fileID: 3678211002634953201, guid: 5efd9184039d9499394a52926a27ef46, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5406,11 +5406,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3678211002634953201, guid: 5efd9184039d9499394a52926a27ef46, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 24.35
+      value: 23.7
       objectReference: {fileID: 0}
     - target: {fileID: 3678211002634953201, guid: 5efd9184039d9499394a52926a27ef46, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -12.699999
+      value: -14.2
       objectReference: {fileID: 0}
     - target: {fileID: 3678211002634953201, guid: 5efd9184039d9499394a52926a27ef46, type: 3}
       propertyPath: m_LocalPosition.z

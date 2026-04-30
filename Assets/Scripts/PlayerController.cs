@@ -2,14 +2,16 @@ using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-// [RequireComponent] garantit qu'un Rigidbody2D est présent sur le GameObject.
-// Si tu ajoutes ce script à un objet sans Rigidbody2D, Unity en créera un automatiquement.
+// [RequireComponent] garantit qu'un Rigidbody2D et un Animator sont présents sur le GameObject.
+// Si tu ajoutes ce script à un objet sans ces composants, Unity les créera automatiquement.
+// L'Animator est nécessaire pour piloter les animations (idle/walk dans les 4 directions).
 [RequireComponent(typeof(Rigidbody2D))]
+[RequireComponent(typeof(Animator))]
 public class PlayerController : MonoBehaviour
 {
     // [SerializeField] rend le champ visible dans l'inspecteur Unity, même s'il est privé.
     // [Range] crée un curseur dans l'inspecteur pour limiter la valeur entre 1 et 20.
-    [SerializeField, Range(1f, 20f)]
+    [SerializeField, Range(1f, 100)]
     private float speed = 5f;
 
     // Référence au Rigidbody2D du joueur (utilisé pour gérer la physique et le déplacement).
@@ -17,12 +19,19 @@ public class PlayerController : MonoBehaviour
 
     // Stocke la direction de déplacement reçue depuis l'Input System (clavier, manette, etc.).
     private Vector2 _movementInput;
+    
+    // Référence à l'Animator du joueur (utilisé pour transmettre la direction
+    // aux paramètres "Horizontal" et "Vertical" du Blend Tree, qui choisira
+    // automatiquement la bonne animation selon la direction).
+    private Animator _animator;
 
     // Awake() est appelée une seule fois, dès que l'objet est créé dans la scène,
     // avant Start(). C'est l'endroit idéal pour récupérer les références aux composants.
     private void Awake()
     {
         _rb = GetComponent<Rigidbody2D>();
+        // GetComponent<Animator>() récupère le composant Animator attaché au même GameObject.
+        _animator = GetComponent<Animator>();
     }
 
     // OnMove() est automatiquement appelée par le composant PlayerInput
@@ -42,5 +51,20 @@ public class PlayerController : MonoBehaviour
         // (sinon le déplacement en diagonale serait plus rapide qu'à l'horizontale ou la verticale).
         // linearVelocity définit directement la vélocité du Rigidbody2D.
         _rb.linearVelocity = _movementInput.normalized * speed;
+
+        // SetFloat() envoie une valeur à un paramètre de l'Animator.
+        // Ces paramètres "Horizontal" et "Vertical" doivent être créés dans
+        // l'Animator Controller (onglet Parameters) et utilisés dans un Blend Tree
+        // pour choisir automatiquement l'animation correspondant à la direction
+        // (ex : Horizontal=1 → walk-est, Vertical=-1 → walk-south).
+        _animator.SetFloat("Horizontal", _movementInput.x);
+        _animator.SetFloat("Vertical", _movementInput.y);
+        _animator.SetFloat("Velocity", _movementInput.sqrMagnitude);
+
+        if (_movementInput.sqrMagnitude > 0.01f)
+        {
+            _animator.SetFloat("LastHorizontal", _movementInput.x);
+            _animator.SetFloat("LastVertical", _movementInput.y);
+        }
     }
 }

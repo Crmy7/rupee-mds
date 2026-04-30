@@ -22,4 +22,8 @@ public class RandomVelocity : MonoBehaviour
         
         _rb.linearVelocity = direction * speed;
     }
+    
+    private void FixedUpdate(){
+        _rb.velocity = _rb.velocity.normalized * speed;
+    }
 }

@@ -211,7 +211,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -225,7 +225,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -249,7 +249,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -277,12 +277,12 @@ TextureImporter:
       name: link-map_0
       rect:
         serializedVersion: 2
-        x: 37
-        y: 220
-        width: 18
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 38
+        y: 221
+        width: 16
+        height: 21
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -299,12 +299,12 @@ TextureImporter:
       name: link-map_1
       rect:
         serializedVersion: 2
-        x: 56
-        y: 220
-        width: 18
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 57
+        y: 221
+        width: 16
+        height: 22
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -321,12 +321,12 @@ TextureImporter:
       name: link-map_2
       rect:
         serializedVersion: 2
-        x: 75
-        y: 220
-        width: 18
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 76
+        y: 221
+        width: 16
+        height: 23
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -343,12 +343,12 @@ TextureImporter:
       name: link-map_3
       rect:
         serializedVersion: 2
-        x: 94
-        y: 220
-        width: 18
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 95
+        y: 221
+        width: 16
+        height: 22
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -365,12 +365,12 @@ TextureImporter:
       name: link-map_4
       rect:
         serializedVersion: 2
-        x: 113
-        y: 220
-        width: 18
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 114
+        y: 221
+        width: 16
+        height: 23
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -384,15 +384,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: link-map_5
+      name: link-south-00
       rect:
         serializedVersion: 2
-        x: 14
-        y: 190
-        width: 18
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 15
+        y: 191
+        width: 16
+        height: 22
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -406,15 +406,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: link-map_6
+      name: link-south-01
       rect:
         serializedVersion: 2
-        x: 35
-        y: 190
-        width: 18
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 36
+        y: 191
+        width: 16
+        height: 22
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -428,15 +428,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: link-map_7
+      name: link-south-02
       rect:
         serializedVersion: 2
-        x: 56
-        y: 190
-        width: 18
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 57
+        y: 191
+        width: 16
+        height: 23
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -450,15 +450,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: link-map_8
+      name: link-south-03
       rect:
         serializedVersion: 2
-        x: 77
-        y: 190
-        width: 18
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 78
+        y: 191
+        width: 16
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -472,15 +472,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: link-map_9
+      name: link-south-04
       rect:
         serializedVersion: 2
-        x: 77
-        y: 164
-        width: 18
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 99
+        y: 191
+        width: 16
+        height: 22
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -494,15 +494,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: link-map_10
+      name: link-south-05
       rect:
         serializedVersion: 2
-        x: 98
-        y: 190
-        width: 18
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 119
+        y: 191
+        width: 16
+        height: 23
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -516,15 +516,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: link-map_11
+      name: link-south-06
       rect:
         serializedVersion: 2
-        x: 118
-        y: 190
-        width: 18
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 140
+        y: 191
+        width: 16
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -541,12 +541,12 @@ TextureImporter:
       name: link-map_12
       rect:
         serializedVersion: 2
-        x: 139
-        y: 190
-        width: 18
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 15
+        y: 165
+        width: 16
+        height: 22
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -563,12 +563,12 @@ TextureImporter:
       name: link-map_13
       rect:
         serializedVersion: 2
-        x: 140
-        y: 164
-        width: 18
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 36
+        y: 165
+        width: 16
+        height: 22
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -585,12 +585,12 @@ TextureImporter:
       name: link-map_14
       rect:
         serializedVersion: 2
-        x: 14
-        y: 164
-        width: 18
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 57
+        y: 165
+        width: 16
+        height: 23
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -607,12 +607,12 @@ TextureImporter:
       name: link-map_15
       rect:
         serializedVersion: 2
-        x: 35
-        y: 164
-        width: 18
+        x: 78
+        y: 165
+        width: 16
         height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -629,12 +629,12 @@ TextureImporter:
       name: link-map_16
       rect:
         serializedVersion: 2
-        x: 56
-        y: 164
-        width: 18
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 99
+        y: 165
+        width: 16
+        height: 22
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -651,12 +651,12 @@ TextureImporter:
       name: link-map_17
       rect:
         serializedVersion: 2
-        x: 98
+        x: 119
         y: 164
-        width: 18
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 16
+        height: 23
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -673,12 +673,12 @@ TextureImporter:
       name: link-map_18
       rect:
         serializedVersion: 2
-        x: 118
-        y: 163
-        width: 18
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 141
+        y: 165
+        width: 16
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -692,15 +692,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: link-map_19
+      name: link-north-00
       rect:
         serializedVersion: 2
         x: 0
-        y: 136
-        width: 18
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 137
+        width: 17
+        height: 23
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -714,15 +714,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: link-map_20
+      name: link-north-01
       rect:
         serializedVersion: 2
-        x: 21
-        y: 136
-        width: 19
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 22
+        y: 137
+        width: 17
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -736,15 +736,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: link-map_21
+      name: link-north-02
       rect:
         serializedVersion: 2
-        x: 21
-        y: 110
-        width: 18
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 44
+        y: 137
+        width: 17
+        height: 22
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -758,15 +758,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: link-map_22
+      name: link-north-03
       rect:
         serializedVersion: 2
-        x: 43
-        y: 136
-        width: 19
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 66
+        y: 137
+        width: 17
+        height: 22
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -780,15 +780,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: link-map_23
+      name: link-north-04
       rect:
         serializedVersion: 2
-        x: 65
-        y: 136
-        width: 19
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 88
+        y: 137
+        width: 17
+        height: 23
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -802,15 +802,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: link-map_24
+      name: link-north-05
       rect:
         serializedVersion: 2
-        x: 87
-        y: 136
-        width: 19
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 110
+        y: 137
+        width: 17
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -824,15 +824,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: link-map_25
+      name: link-north-06
       rect:
         serializedVersion: 2
-        x: 109
-        y: 136
-        width: 19
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 132
+        y: 137
+        width: 17
+        height: 22
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -846,15 +846,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: link-map_26
+      name: link-north-07
       rect:
         serializedVersion: 2
-        x: 131
-        y: 136
-        width: 19
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 154
+        y: 137
+        width: 17
+        height: 22
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -871,12 +871,12 @@ TextureImporter:
       name: link-map_27
       rect:
         serializedVersion: 2
-        x: 153
-        y: 136
-        width: 18
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 111
+        width: 16
+        height: 23
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -893,12 +893,12 @@ TextureImporter:
       name: link-map_28
       rect:
         serializedVersion: 2
-        x: 0
-        y: 110
-        width: 17
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 22
+        y: 111
+        width: 16
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -915,12 +915,12 @@ TextureImporter:
       name: link-map_29
       rect:
         serializedVersion: 2
-        x: 43
-        y: 110
-        width: 18
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 44
+        y: 111
+        width: 16
+        height: 22
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -937,12 +937,12 @@ TextureImporter:
       name: link-map_30
       rect:
         serializedVersion: 2
-        x: 65
-        y: 109
-        width: 18
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 66
+        y: 110
+        width: 16
+        height: 22
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -959,12 +959,12 @@ TextureImporter:
       name: link-map_31
       rect:
         serializedVersion: 2
-        x: 87
-        y: 109
-        width: 18
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 88
+        y: 110
+        width: 16
+        height: 23
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -981,12 +981,12 @@ TextureImporter:
       name: link-map_32
       rect:
         serializedVersion: 2
-        x: 109
-        y: 109
-        width: 18
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 110
+        y: 110
+        width: 16
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1003,12 +1003,12 @@ TextureImporter:
       name: link-map_33
       rect:
         serializedVersion: 2
-        x: 131
-        y: 109
-        width: 18
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 132
+        y: 110
+        width: 16
+        height: 22
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1025,12 +1025,12 @@ TextureImporter:
       name: link-map_34
       rect:
         serializedVersion: 2
-        x: 153
-        y: 109
-        width: 18
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 154
+        y: 110
+        width: 16
+        height: 22
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1044,15 +1044,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: link-map_35
+      name: link-west-00
       rect:
         serializedVersion: 2
-        x: 16
-        y: 81
-        width: 21
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 17
+        y: 82
+        width: 19
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1066,15 +1066,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: link-map_36
+      name: link-west-01
       rect:
         serializedVersion: 2
-        x: 19
-        y: 56
+        x: 41
+        y: 82
         width: 18
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1088,15 +1088,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: link-map_37
+      name: link-west-02
       rect:
         serializedVersion: 2
-        x: 40
-        y: 81
-        width: 20
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 64
+        y: 82
+        width: 19
+        height: 23
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1110,15 +1110,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: link-map_38
+      name: link-west-03
       rect:
         serializedVersion: 2
-        x: 42
-        y: 56
-        width: 18
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 88
+        y: 82
+        width: 19
+        height: 23
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1132,15 +1132,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: link-map_39
+      name: link-west-04
       rect:
         serializedVersion: 2
-        x: 63
-        y: 81
-        width: 21
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 112
+        y: 82
+        width: 19
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1154,15 +1154,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: link-map_40
+      name: link-west-05
       rect:
         serializedVersion: 2
-        x: 65
-        y: 56
-        width: 19
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 136
+        y: 82
+        width: 18
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1179,12 +1179,12 @@ TextureImporter:
       name: link-map_41
       rect:
         serializedVersion: 2
-        x: 87
-        y: 81
-        width: 21
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 20
+        y: 57
+        width: 16
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1201,12 +1201,12 @@ TextureImporter:
       name: link-map_42
       rect:
         serializedVersion: 2
-        x: 90
-        y: 56
-        width: 18
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 43
+        y: 57
+        width: 16
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1223,12 +1223,12 @@ TextureImporter:
       name: link-map_43
       rect:
         serializedVersion: 2
-        x: 111
-        y: 81
-        width: 21
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 66
+        y: 57
+        width: 17
+        height: 23
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1245,12 +1245,12 @@ TextureImporter:
       name: link-map_44
       rect:
         serializedVersion: 2
-        x: 114
-        y: 55
-        width: 18
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 91
+        y: 57
+        width: 16
+        height: 23
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1267,12 +1267,12 @@ TextureImporter:
       name: link-map_45
       rect:
         serializedVersion: 2
-        x: 135
-        y: 81
-        width: 20
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 115
+        y: 56
+        width: 16
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1289,12 +1289,12 @@ TextureImporter:
       name: link-map_46
       rect:
         serializedVersion: 2
-        x: 137
-        y: 55
-        width: 18
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 138
+        y: 56
+        width: 16
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1308,15 +1308,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: link-map_47
+      name: link-est-00
       rect:
         serializedVersion: 2
-        x: 16
-        y: 25
-        width: 21
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 17
+        y: 26
+        width: 19
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1330,15 +1330,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: link-map_48
+      name: link-est-01
       rect:
         serializedVersion: 2
-        x: 16
-        y: 0
+        x: 43
+        y: 26
         width: 18
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1352,15 +1352,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: link-map_49
+      name: link-est-02
       rect:
         serializedVersion: 2
-        x: 42
-        y: 25
-        width: 20
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 66
+        y: 26
+        width: 19
+        height: 23
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1374,15 +1374,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: link-map_50
+      name: link-est-03
       rect:
         serializedVersion: 2
-        x: 42
-        y: 0
-        width: 18
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 90
+        y: 26
+        width: 19
+        height: 23
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1396,15 +1396,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: link-map_51
+      name: link-est-04
       rect:
         serializedVersion: 2
-        x: 65
-        y: 25
-        width: 21
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 114
+        y: 26
+        width: 19
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1418,15 +1418,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: link-map_52
+      name: link-est-05
       rect:
         serializedVersion: 2
-        x: 65
-        y: 0
-        width: 19
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 138
+        y: 26
+        width: 18
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1443,12 +1443,12 @@ TextureImporter:
       name: link-map_53
       rect:
         serializedVersion: 2
-        x: 89
-        y: 25
-        width: 21
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 17
+        y: 1
+        width: 16
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1465,12 +1465,12 @@ TextureImporter:
       name: link-map_54
       rect:
         serializedVersion: 2
-        x: 89
-        y: 0
-        width: 18
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 43
+        y: 1
+        width: 16
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1487,12 +1487,12 @@ TextureImporter:
       name: link-map_55
       rect:
         serializedVersion: 2
-        x: 113
-        y: 25
-        width: 21
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 66
+        y: 1
+        width: 17
+        height: 23
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1509,12 +1509,12 @@ TextureImporter:
       name: link-map_56
       rect:
         serializedVersion: 2
-        x: 113
-        y: 0
-        width: 18
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 90
+        y: 1
+        width: 16
+        height: 23
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1531,12 +1531,12 @@ TextureImporter:
       name: link-map_57
       rect:
         serializedVersion: 2
-        x: 137
-        y: 25
-        width: 20
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 114
+        y: 0
+        width: 16
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1553,12 +1553,12 @@ TextureImporter:
       name: link-map_58
       rect:
         serializedVersion: 2
-        x: 137
+        x: 138
         y: 0
-        width: 18
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 16
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1575,7 +1575,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: d5fb21767633348c18adb7c8d484b623
     internalID: 0
     vertices: []
     indices: 
@@ -1583,12 +1583,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.20000000298023225},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":9,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
+      link-est-00: -5515188087104950710
+      link-est-01: -6274718176330793814
+      link-est-02: -6146141621866183043
+      link-est-03: -300369032293236538
+      link-est-04: 4881748987849430679
+      link-est-05: 5120603330385318295
       link-map_0: -67373552992425490
       link-map_1: -3392053607377173726
-      link-map_10: 7246239700712613135
-      link-map_11: -3674046000614514664
       link-map_12: 219136003624121108
       link-map_13: 871860249887702805
       link-map_14: 8642283382249952011
@@ -1596,15 +1602,7 @@ TextureImporter:
       link-map_16: -2442361603440246836
       link-map_17: -5076292355715933875
       link-map_18: 5767329831866143067
-      link-map_19: 182573757133605601
       link-map_2: 405927064045051053
-      link-map_20: 3008225271501686272
-      link-map_21: -4649043339372131925
-      link-map_22: -6523275000927184956
-      link-map_23: -1359182043013167613
-      link-map_24: -9203566135990781918
-      link-map_25: -1233224807229022298
-      link-map_26: -1139548291292777652
       link-map_27: 6506366013939362104
       link-map_28: 6229895632084552438
       link-map_29: 7526711545624162600
@@ -1614,36 +1612,40 @@ TextureImporter:
       link-map_32: -5298927767216832776
       link-map_33: -1790709883611490006
       link-map_34: -1881102935205409995
-      link-map_35: 2492141811504471673
-      link-map_36: -4177788942742315012
-      link-map_37: 794997951645139329
-      link-map_38: 5259801771241513588
-      link-map_39: -9152756523783364616
       link-map_4: -5236190117660114481
-      link-map_40: 3781184727775189171
       link-map_41: -2048047264497721852
       link-map_42: 8535974740351169112
       link-map_43: -502195407146203495
       link-map_44: -8811873072885424846
       link-map_45: 5453630597413080009
       link-map_46: -6817665898740792861
-      link-map_47: -5515188087104950710
-      link-map_48: -6274718176330793814
-      link-map_49: -6146141621866183043
-      link-map_5: 1403037296664998529
-      link-map_50: -300369032293236538
-      link-map_51: 4881748987849430679
-      link-map_52: 5120603330385318295
       link-map_53: 466135026398605196
       link-map_54: 8828148681562301475
       link-map_55: -5930605212627329531
       link-map_56: -3194695503909860702
       link-map_57: 4799902003611760202
       link-map_58: 7037950312953867668
-      link-map_6: -3448688070452621026
-      link-map_7: -4135829709665935689
-      link-map_8: 695414813478884953
-      link-map_9: -3452031240355953442
+      link-north-00: 182573757133605601
+      link-north-01: 3008225271501686272
+      link-north-02: -4649043339372131925
+      link-north-03: -6523275000927184956
+      link-north-04: -1359182043013167613
+      link-north-05: -9203566135990781918
+      link-north-06: -1233224807229022298
+      link-north-07: -1139548291292777652
+      link-south-00: 1403037296664998529
+      link-south-01: -3448688070452621026
+      link-south-02: -4135829709665935689
+      link-south-03: 695414813478884953
+      link-south-04: -3452031240355953442
+      link-south-05: 7246239700712613135
+      link-south-06: -3674046000614514664
+      link-west-00: 2492141811504471673
+      link-west-01: -4177788942742315012
+      link-west-02: 794997951645139329
+      link-west-03: 5259801771241513588
+      link-west-04: -9152756523783364616
+      link-west-05: 3781184727775189171
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -9,10 +9,12 @@ public class RupeeManager : MonoBehaviour
 {
     [SerializeField] private Transform spawner;       // Point d'apparition (un GameObject mobile dans la scène)
     [SerializeField] private Rupee rupeePrefab;       // Prefab à instancier
-    [SerializeField] private Transform container;     // Parent dans la hiérarchie où ranger les rupees
+    [SerializeField] private Transform container; // Parent dans la hiérarchie où ranger les rupees
 
     [SerializeField, UnityEngine.Range(0.1f, 5f)]
     private float spawnDelay = 1f;
+
+    [SerializeField] private List<RupeeData> rupeeDataList;
 
     // Event écouté par GameManager pour incrémenter le score.
     public event Action<Rupee> OnRupeeCollected;
@@ -57,7 +59,9 @@ public class RupeeManager : MonoBehaviour
 
     private void Spawn()
     {
+        var data = rupeeDataList[UnityEngine.Random.Range(0, rupeeDataList.Count)];
         var rupee = Instantiate(rupeePrefab, spawner.position, Quaternion.identity, container);
+        rupee.Init(data);
         AddRupee(rupee);
     }
 

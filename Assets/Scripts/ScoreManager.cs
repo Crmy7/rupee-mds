@@ -15,9 +15,9 @@ public class ScoreManager : MonoBehaviour
         _bestScore = PlayerPrefs.GetInt("BestScoreKey", 0);
     }
     
-    public void IncrementScore()
+    public void IncrementScore(int amount)
     {
-        _score++;
+        _score += amount;
         TrySaveBestScore();
     }
 

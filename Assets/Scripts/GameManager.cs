@@ -69,7 +69,7 @@ public class GameManager : MonoBehaviour
 
     private void HandleRupeeCollected(Rupee rupee)
     {
-        _scoreManager.IncrementScore();
+        _scoreManager.IncrementScore(rupee.Data.score);
     }
 
     // Temps écoulé → on arrête la partie (stop spawn + fire OnGameStopped).

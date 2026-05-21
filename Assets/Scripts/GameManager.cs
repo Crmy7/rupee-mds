@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     private TimeManager _timeManager;
     private RupeeManager _rupeeManager;
     private ScoreManager _scoreManager;
+    private AudioManager _audioManager;
     
     [SerializeField]
     private PlayerController playerController;
@@ -24,6 +25,7 @@ public class GameManager : MonoBehaviour
         _timeManager = GetComponent<TimeManager>();
         _rupeeManager = GetComponent<RupeeManager>();
         _scoreManager = GetComponent<ScoreManager>();
+        _audioManager = GetComponent<AudioManager>();
     }
 
     // Appelée par le bouton Start de l'UI (via son OnClick).
@@ -34,6 +36,7 @@ public class GameManager : MonoBehaviour
         _rupeeManager.ResetRupees();
         _scoreManager.ResetScore();
 
+        _audioManager.Play();
         _timeManager.StartTimer();
         _rupeeManager.StartSpawning();
         playerController.SetCanMove(true);
@@ -46,6 +49,7 @@ public class GameManager : MonoBehaviour
         playerController.SetCanMove(false);
         _rupeeManager.StopSpawning();
         _rupeeManager.ResetRupees();
+        _audioManager.Stop();
         
         OnGameStopped?.Invoke();
     }

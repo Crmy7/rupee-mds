@@ -11,6 +11,7 @@ public class UIManager : MonoBehaviour
     // Champs assignés dans l'Inspector (drag & drop des éléments UI du Canvas).
     [SerializeField] private TextMeshProUGUI scoreText;
     [SerializeField] private TextMeshProUGUI remainingText;
+    [SerializeField] private TextMeshProUGUI bestScoreText;
     [SerializeField] private GameObject startButton;
 
     private ScoreManager _scoreManager;
@@ -50,6 +51,7 @@ public class UIManager : MonoBehaviour
     private void Update()
     {
         scoreText.text = $"Score : {_scoreManager.Score}";
+        bestScoreText.text = $"Best : {_scoreManager.BestScore}";
 
         // TimeSpan.FromSeconds(...).ToString("mm\\:ss") → formate 90s en "01:30".
         remainingText.text = TimeSpan.FromSeconds(_timeManager.Remaining).ToString(@"mm\:ss");

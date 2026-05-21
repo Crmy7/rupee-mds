@@ -13,6 +13,8 @@ public class RupeeManager : MonoBehaviour
     public event Action<Rupee> OnRupeeCollected;
 
     public readonly List<Rupee> _rupees = new();
+    private Coroutine _spawnRoutine;
+    
 
     private void Start()
     {
@@ -21,9 +23,17 @@ public class RupeeManager : MonoBehaviour
 
     private void StartSpawning()
     {
-        StartCoroutine(SpawnRoutine());
+        _spawnRoutine = StartCoroutine(SpawnRoutine());
     }
 
+    public void StopSpawning()
+    {
+        if (_spawnRoutine != null)
+        {
+            StopCoroutine(_spawnRoutine);
+            _spawnRoutine = null;
+        }
+    }
     private IEnumerator SpawnRoutine()
     {
         while (true)

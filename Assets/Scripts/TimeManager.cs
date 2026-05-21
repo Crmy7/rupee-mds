@@ -5,7 +5,7 @@ public class TimeManager : MonoBehaviour
 {
     [SerializeField, Range(10f, 600f)] private float duration = 120f;
     
-    private event  Action onTimeUp;
+    public event Action OnTimeUp;
 
     private float _remaining;
     private bool _running;
@@ -28,7 +28,7 @@ public class TimeManager : MonoBehaviour
         {
             _remaining = 0f;
             _running = false;
-            onTimeUp?.Invoke();
+            OnTimeUp?.Invoke();
         }
     }
 }

@@ -24,6 +24,6 @@ public class UIManager : MonoBehaviour
         int totalSeconds = Mathf.CeilToInt(_timeManager.Remaining);
         int minutes = totalSeconds / 60;
         int seconds = totalSeconds % 60;
-        remainingText.text = $"Temps : {minutes:00}:{seconds:00}";
+        remainingText.text = $"{minutes:00}:{seconds:00}";
     }
 }

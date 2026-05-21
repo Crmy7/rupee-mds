@@ -25,6 +25,9 @@ public class PlayerController : MonoBehaviour
     // automatiquement la bonne animation selon la direction).
     private Animator _animator;
 
+    // 
+    private bool _canMove;
+    
     // Awake() est appelée une seule fois, dès que l'objet est créé dans la scène,
     // avant Start(). C'est l'endroit idéal pour récupérer les références aux composants.
     private void Awake()
@@ -34,11 +37,18 @@ public class PlayerController : MonoBehaviour
         _animator = GetComponent<Animator>();
     }
 
+    public void SetCanMove(bool value)
+    {
+        _canMove = value;
+        if(!value) _movementInput = Vector2.zero;
+    }
+
     // OnMove() est automatiquement appelée par le composant PlayerInput
     // quand l'action "Move" est déclenchée (touches ZQSD/WASD, joystick, etc.).
     // Le nom de la méthode doit correspondre à l'action définie dans les Input Actions.
     void OnMove(InputValue value)
     {
+        if (!_canMove)  return;
         // On récupère la valeur de l'input sous forme de Vector2 (x = horizontal, y = vertical).
         _movementInput = value.Get<Vector2>();
     }

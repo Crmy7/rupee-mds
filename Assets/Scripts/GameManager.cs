@@ -11,6 +11,9 @@ public class GameManager : MonoBehaviour
     private TimeManager _timeManager;
     private RupeeManager _rupeeManager;
     private ScoreManager _scoreManager;
+    
+    [SerializeField]
+    private PlayerController playerController;
 
     // Events écoutés par l'UIManager (cache/affiche le bouton Start).
     public event Action OnGameStarted;
@@ -33,14 +36,17 @@ public class GameManager : MonoBehaviour
 
         _timeManager.StartTimer();
         _rupeeManager.StartSpawning();
+        playerController.SetCanMove(true);
 
         OnGameStarted?.Invoke();
     }
 
     public void StopGame()
     {
+        playerController.SetCanMove(false);
         _rupeeManager.StopSpawning();
         _rupeeManager.ResetRupees();
+        
         OnGameStopped?.Invoke();
     }
 

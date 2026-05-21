@@ -3,25 +3,35 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// Spawn des rupees à intervalle régulier + tracking des rupees actives.
+// Fire OnRupeeCollected quand une rupee est ramassée par le joueur.
 public class RupeeManager : MonoBehaviour
 {
-    [SerializeField] private Transform spawner;
-    [SerializeField] private Rupee rupeePrefab;
-    [SerializeField] private Transform container;
-    [SerializeField, UnityEngine.Range(0.1f, 5f)] private float spawnDelay = 1f;
+    [SerializeField] private Transform spawner;       // Point d'apparition (un GameObject mobile dans la scène)
+    [SerializeField] private Rupee rupeePrefab;       // Prefab à instancier
+    [SerializeField] private Transform container;     // Parent dans la hiérarchie où ranger les rupees
 
+    [SerializeField, UnityEngine.Range(0.1f, 5f)]
+    private float spawnDelay = 1f;
+
+    // Event écouté par GameManager pour incrémenter le score.
     public event Action<Rupee> OnRupeeCollected;
 
     public readonly List<Rupee> _rupees = new();
     private Coroutine _spawnRoutine;
-    
 
-    private void Start()
+    // Détruit toutes les rupees encore en scène et stoppe la coroutine.
+    public void ResetRupees()
     {
-        StartSpawning();
+        StopSpawning();
+        foreach (var rupee in _rupees)
+        {
+            if (rupee != null) Destroy(rupee.gameObject);
+        }
+        _rupees.Clear();
     }
 
-    private void StartSpawning()
+    public void StartSpawning()
     {
         _spawnRoutine = StartCoroutine(SpawnRoutine());
     }
@@ -34,6 +44,8 @@ public class RupeeManager : MonoBehaviour
             _spawnRoutine = null;
         }
     }
+
+    // Coroutine : boucle infinie qui spawn puis attend spawnDelay secondes.
     private IEnumerator SpawnRoutine()
     {
         while (true)
@@ -49,6 +61,7 @@ public class RupeeManager : MonoBehaviour
         AddRupee(rupee);
     }
 
+    // On s'abonne à l'event OnCollected de chaque rupee pour être notifié de sa collecte.
     private void AddRupee(Rupee rupee)
     {
         _rupees.Add(rupee);
@@ -61,7 +74,4 @@ public class RupeeManager : MonoBehaviour
         rupee.OnCollected -= RupeeHandleRupeeCollected;
         OnRupeeCollected?.Invoke(rupee);
     }
-    
-    
-
 }
